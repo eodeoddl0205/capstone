@@ -1,0 +1,66 @@
+.school-component {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  max-width: 300px;
+  margin: 16px auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.school-component:hover {
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.school-component:hover .address.overtext {
+  white-space: normal;
+  overflow: visible;
+  text-overflow: clip;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.school-component .logo-container {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.school-component .logo {
+  width: 161px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.school-component .school-name {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.school-component .address {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.school-component .details {
+  font-size: 0.9em;
+  color: #444;
+}
+
+.school-component .details p {
+  margin: 4px 0;
+}
+
+.overtext {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
